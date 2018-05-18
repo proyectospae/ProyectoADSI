@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Baskerville old face;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url(../imagenes/azul.jpg);
+	background-repeat: no-repeat;
+	background-size: 2000px 1000px;
+	display: flex;
+	min-height: 100vh;
+}
+
+p{
+	text-align: center;
+	font-size: 18px;
+}
+ h3{
+ 	line-height: 0px;
+ }
+
+.container{
+	margin: auto;
+    width: 30%;
+    max-height: 700px;
+    background: #F3F3F3;
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background: #E2F1FE;
+	background-repeat: no-repeat;
+	background-size: 800px 300px;
+}
+
+.form-signin-heading{
+	color: #84CBFF;
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.btn-primary{
+	width: 100%;
+	padding: 10px;
+	display: block;
+	margin: 20px 0;
+	font-size: 20px;
+	cursor: pointer;
+	font-family: Baskerville old face;
+}
+
+.alert-success{
+	text-align: center;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 4px;
+	padding: 5px;
+}
+
+#container1{
+	width: 450px;
+}
+
+#email{
+	padding: 20px;
+}
+
+#password1{
+	padding: 20px;
+}
+
+#atras{
+	float: right;
+	font-size: 20px;
+}

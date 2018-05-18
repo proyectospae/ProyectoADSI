@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Baskerville old face;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url(../imagenes/azul.jpg);
+	background-repeat: no-repeat;
+	background-size: 2000px 1000px;
+	display: flex;
+	min-height: 100vh;
+}
+
+.container{
+	margin: auto;
+
+}

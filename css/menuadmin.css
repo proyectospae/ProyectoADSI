@@ -1,0 +1,82 @@
+*{
+	font-family: Baskerville old face;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url(../imagenes/azul.jpg);
+	background-repeat: no-repeat;
+	background-size: 2000px 1000px;
+	display: flex;
+	min-height: 100vh;
+}
+
+footer{
+	align-self: flex-end;
+	background-image: linear-gradient(to bottom,#fff,#f2f2f2);
+	line-height: 3;
+	width: 100%;
+	text-align: left;
+	position: absolute;
+}
+
+p{
+	font-size: 60px;
+	text-align: center;
+	padding: 10px;
+}
+
+.btn-primary{
+	font-size: 20px;
+	font-family: Baskerville old face;
+}
+
+.container{
+	margin: auto;
+    padding: 60px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background: #E2F1FE;
+}
+
+#container1{
+	margin-top: 180px;
+	width: 98%;
+	padding: 85px;
+
+}
+
+#boton1{
+	padding: 105px 125px;
+	border-radius: 25px;
+	border: 1px solid rgba(0,0,0,0.2);
+	background-image: linear-gradient(to bottom,#E2F1FE,#04c);
+	color: white;
+	font-family: Baskerville old face;
+	font-size: 40px;
+	width: 49%;
+}
+
+#boton2{
+	padding: 105px 131px;
+	border-radius: 25px;
+	float: right;
+	border: 1px solid rgba(0,0,0,0.2);
+	background-image: linear-gradient(to bottom,#08c,#E2F1FE);
+	color: white;
+	font-family: Baskerville old face;
+	font-size: 40px;
+	width: 49%;
+}
+
+.margin{
+	border: 1px solid rgba(0,0,0,0.2);
+	background: #E2F1FE;
+	color: #84CBFF;
+	padding: 30px;
+	position: absolute;
+	width: 100%
+} 
+
+.atras{
+	float: right;
+}

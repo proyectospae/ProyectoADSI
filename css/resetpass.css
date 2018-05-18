@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Baskerville old face;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url(../imagenes/azul.jpg);
+	background-repeat: no-repeat;
+	background-size: 2000px 1000px;
+	display: flex;
+	min-height: 100vh;
+}
+
+.container{
+	margin: auto;
+    width: 30%;
+    max-height: 700px;
+    background: #F3F3F3;
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background: #E2F1FE;
+	background-repeat: no-repeat;
+	background-size: 800px 300px;
+}
+
+.form-signin-heading{
+	text-align: center;
+}
+
+button{
+	width:100%;
+}
+
+.btn-btn-large{
+	font-size: 18px;
+}
+
+#container{
+	width: 450px;
+}
+
+#contraseña{
+	padding: 20px;
+}
