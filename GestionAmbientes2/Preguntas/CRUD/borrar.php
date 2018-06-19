@@ -20,7 +20,7 @@ echo $a."<br>";
 //CONEXI�N A LA BASE DE DATOS
 //Datos de conexi�n
 $hostname_db = "localhost";
-$database_db = "modelo";
+$database_db = "dbtest";
 $username_db = "root";
 $password_db = "";
 // Creaci�n del Objeto y entregando los datos a los atributos
@@ -29,7 +29,7 @@ $z = new mysqli($hostname_db, $username_db, $password_db,$database_db);
 // Se verifica si hay alg�n erro en la conexion
 
 if ($z->connect_errno) {
-    printf("Fallo en la conexion a la base de datos: %s\n", $a->connect_error);
+    printf("/Fallo en la conexion a la base de datos: %s\n", $a->connect_error);
     exit();
 }
 // Consulta en SQL
@@ -37,7 +37,7 @@ $query = "delete from preguntas where id_Pregunta='$a'";
 $z->query($query);
 
 ?>
-<br><br><p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/preguntas/preguntas.php" id="volver">Volver menu principal</a></p>
+<br><br><p><a href="/ProyectoADSI/GestionAmbientes2/preguntas/preguntas.php" id="volver">Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

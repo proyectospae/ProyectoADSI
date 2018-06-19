@@ -14,10 +14,14 @@
    	<?php
 // Recibe los datos enviados desde html
    	echo "<center></center><br><center>";
-$a=$_POST["centronombre"];
+$a=$_POST["ID"];
+$b=$_POST["centronombre"];
+$c=$_POST["IDciudad"];
 
 
 echo $a."<br>";
+echo $b."<br>";
+echo $c."<br>";
 
 $hostname_db = "localhost";
 $database_db = "dbtest";
@@ -32,12 +36,12 @@ if ($z->connect_errno) {
     exit();
 }
 // Consulta en SQL
-$query = "INSERT INTO `centro` (`CentroNom`) VALUES ('$a')";
+$query = "INSERT INTO `centro` (`idCentro`, `CentroNom`, `ciudades_idciudades`) VALUES ('$a', '$b', '$c')";
 $z->query($query);
 //echo $z;
 
 ?>
-<p><br><a href="http://localhost:8080/ProyectoADSI/login/home2.php" id="volver">Volver menu principal</a></p>
+<p><br><a href="/ProyectoADSI/GestionAmbientes2/Centros/centro.php" id="volver">Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

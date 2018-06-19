@@ -14,12 +14,17 @@
   <p2 id="p2"><center>Formulario de Ciudades</center></p2>
       <table width="200" border="1"><br><br>
     <tr>
+      ID de Ciudad:
+      <input type="text" name="ID" id="ID" required=""> 
       Ciudad:
-      <input type="text" name="ciudades" id="ciudades" required=""> 
+      <input type="text" name="ciudades" id="ciudades" required="">
+      ID del Departamento:
+      <input type="text" name="IDdempat" id="IDdempat" required="">
+
       <input type="submit" name="Guardar" id="Guardar" value="Enviar">
   </table>
     </form>
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Ciudades/ciudades.php" id="volver">Volver menu principal</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/Ciudades/ciudades.php" id="volver">Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

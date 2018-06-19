@@ -22,7 +22,7 @@ echo $a."<br>";
 //CONEXI�N A LA BASE DE DATOS
 //Datos de conexi�n
 $hostname_db = "localhost";
-$database_db = "modelo";
+$database_db = "dbtest";
 $username_db = "root";
 $password_db = "";
 // Creaci�n del Objeto y entregando los datos a los atributos
@@ -39,7 +39,7 @@ $query = "INSERT INTO `preguntas` (`Nom_Pregunta`) VALUES ('$a')";
 $z->query($query);
 //echo $z;
 ?>
-<p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Preguntas/preguntas.php" id="volver"><br>Volver menu principal</a></p>
+<p><a href="/ProyectoADSI/GestionAmbientes2/Preguntas/preguntas.php" id="volver"><br>Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

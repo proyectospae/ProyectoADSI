@@ -14,12 +14,17 @@
   <p2 id="p2"><center>Formulario de Sedes</center></p2>
       <table width="200" border="1"><br><br>
        <tr>
-        Sede: 
+      ID Sede: 
+      <input type="text" name="ID" id="ID" required="">
+      Sede: 
       <input type="text" name="sedenom" id="sedenom" required="">
+      ID del Centro: 
+      <input type="text" name="IDcentro" id="IDcentro" required="">
+
       <input type="submit" name="Guardar" id="Guardar" value="Enviar">
   </table>
 </form>
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Sedes/sedes.php" id="volver">Volver menu principal</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/Sedes/sedes.php" id="volver">Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

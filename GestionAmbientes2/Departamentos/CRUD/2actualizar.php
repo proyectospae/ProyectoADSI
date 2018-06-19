@@ -36,11 +36,11 @@ if ($z->connect_errno) {
     exit();
 }
 // Consulta en SQL
-$query = "UPDATE `departamentos` set `departamentos`='$a' where iddepartamentos='$b'";
+$query = "UPDATE `departamentos` set  iddepartamentos='$b' where `departamentos`='$a'";
 $z->query($query);
 //echo $z;
 ?>
-<p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Departamentos/departamentos.php" id="volver"><br>Volver menu principal</a></p>
+<p><a href="/ProyectoADSI/GestionAmbientes2/Departamentos/departamentos.php" id="volver"><br>Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

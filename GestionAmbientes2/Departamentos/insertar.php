@@ -13,12 +13,15 @@
     <form name="form1" method="post" action="CRUD/registrar.php"><br><br>
       <p2 id="p2"><center>Registro de Departamentos</center></p2>
       <table width="200" border="1"><br><br>
+        ID:
+        <input type="text" name="IDdepart" id="IDdepart" required="">
         Departamento:
         <input type="text" name="departamentos" id="departamentos" required="">
+        
         <input type="submit" name="Guardar" id="Guardar" value="Enviar">
       </table>
     </form>
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Departamentos/departamentos.php" id="volver">Volver menu principal</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/Departamentos/departamentos.php" id="volver">Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

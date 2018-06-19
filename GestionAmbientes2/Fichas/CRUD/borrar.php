@@ -37,7 +37,7 @@ $query = "delete from fichas where idfichas='$a'";
 $z->query($query);
 
 ?>
-<br><br><p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Fichas/fichas.php" id="volver">Volver menu principal</a></p>
+<br><br><p><a href="/ProyectoADSI/GestionAmbientes2/Fichas/fichas.php" id="volver">Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

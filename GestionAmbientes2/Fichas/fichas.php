@@ -14,7 +14,7 @@
    	<p><a href="CRUD/mostrar.php" id="link1">Mostrar las Fichas</a></p>
    	<p><a href="actualizar.php" id="link1">Actualizar los datos de las Fichas</a></p>
    	<p><a href="borrar.php" id="link1">Borrar las Fichas</a></p>
-    <p><a href="http://localhost:8080/ProyectoADSI/login/home2.php"><input type="submit" value="Regresar al Inicio" id="boton2"></a></p>
+    <p><a href="/ProyectoADSI/login/home2.php"><input type="submit" value="Regresar al Inicio" id="boton2"></a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

@@ -19,7 +19,7 @@
       <input type="submit" name="Guardar" id="Guardar" value="Enviar">
   </table>
     </form>
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Preguntas/preguntas.php" id="volver">Volver menu principal</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/Preguntas/preguntas.php" id="volver">Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

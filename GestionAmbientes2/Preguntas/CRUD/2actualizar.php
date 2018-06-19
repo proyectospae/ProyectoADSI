@@ -25,7 +25,7 @@ echo $b."<br>";
 //CONEXI�N A LA BASE DE DATOS
 //Datos de conexi�n
 $hostname_db = "localhost";
-$database_db = "modelo";
+$database_db = "dbtest";
 $username_db = "root";
 $password_db = "";
 // Creaci�n del Objeto y entregando los datos a los atributos
@@ -42,7 +42,7 @@ $query =  "UPDATE `preguntas` set `Nom_Pregunta`='$a' where id_Pregunta='$b'";
 $z->query($query);
 //echo $z;
 ?>
-<p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/preguntas/preguntas.php" id="volver"><br>Volver menu principal</a></p>
+<p><a href="/ProyectoADSI/GestionAmbientes2/preguntas/preguntas.php" id="volver"><br>Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

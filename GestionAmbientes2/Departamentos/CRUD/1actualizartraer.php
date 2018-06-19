@@ -55,7 +55,7 @@ if ($z->connect_errno) {
   </table>
   <p>
 </form>
-<p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Departamentos/departamentos.php" id="volver">Volver menu principal</a></p>
+<p><a href="/ProyectoADSI/GestionAmbientes2/Departamentos/departamentos.php" id="volver">Volver menu principal</a></p>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container-fluid">

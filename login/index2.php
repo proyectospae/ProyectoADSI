@@ -49,7 +49,7 @@ if(isset($_POST['btn-login']))
         <?php
       }
       ?>
-      <a href="http://localhost:8080/ProyectoADSI/php/menuadmin.php" class="btn-btn-large" id="atras"><center>Atras</center></a><br>
+      <a href="/ProyectoADSI/login/opcionadmin.php" class="btn-btn-large" id="atras"><center>Atras</center></a><br>
       <h2 class="form-signin-heading">Iniciar Sesion</h2><hr/>
       <p>Ingresa Email</p>
       <input type="email" class="input-block-level" id="email" placeholder="&#128272;Ingresa Email" name="txtemail" required/>

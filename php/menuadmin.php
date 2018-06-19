@@ -9,8 +9,8 @@
     <P>Sistema de Verificacion de Ambientes <br><br><br> Administrador </P>
   </div>
 	<div class="container" id="container1" style="">
-        <a href="http://localhost:8080/ProyectoADSI/login/index2.php"><input type="submit" value="Administrador" id="boton1"></a>
-        <a href="http://localhost:8080/ProyectoADSI/php/index.php"><input type="submit" value="Iniciar Sesion" id="boton2"></a>
+        <a href="/ProyectoADSI/login/index2.php"><input type="submit" value="Administrador" id="boton1"></a>
+        <a href="/ProyectoADSI/php/index.php"><input type="submit" value="Iniciar Sesion" id="boton2"></a>
 	</div>
 	<footer>
         <div class="pull-right hidden-xs">

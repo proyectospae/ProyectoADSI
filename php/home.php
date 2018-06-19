@@ -13,17 +13,18 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-  <title><?php echo $row['userEmail']; ?></title>
+  <title>Sistema de Verificacion de Ambientes</title>
   <link rel="stylesheet" type="text/css" href="../css/home.css">
   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
   <script language="javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
+<form id="combo" name="combo" action="Enviar.php" method="POST">
   <div class="margin" id="margin">
     <P>Sistema de Verificacion de Ambientes</P>
   </div>
   <div class="margin1" id="margin1">
-    <form action="home.php" method="post"><br><br>
+    
     <label for="txtNombres">Nombres</label><input type="text" id="margin1" name="txtNombres" placeholder="&#128272;Nombres" required="">
     <label for="txtApellidos">Apellidos</label><input type="text" id="margin1" name="txtApellidos" placeholder="&#128272;Apellidos" required="">
     <label for="txtCedula">Cedula</label><input type="text" id="margin1" name="txtCedula" placeholder="&#128272;Cedula" required="">
@@ -33,66 +34,58 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
   
     
   <div class="margin3" id="margin3"><br>
-    <?php
-      include("conexionN.php");
-    ?>
+ 
     <select name="cbopreg1" id="preg" required>
-      <option value="Cumple">Cumple</option>
-      <option value="No Cumple">No Cumple</option>
+      <option value="SI">Cumple</option>
+      <option value="NO">No Cumple</option>
     </select>
     <br><br>
 
     ✻ La maquinaria y equipos son suficientes y se encuentran en buen estado para desarrollar la actividad de aprendizaje.
     <select name="cbopreg2" id="preg" required>
-      <option value="Cumple">Cumple</option>
-      <option value="No Cumple">No Cumple</option>
+      <option value="SI">Cumple</option>
+      <option value="NO">No Cumple</option>
     </select>
     <br><br><br>
 
     ✻ El ambiente se encuentra en buenas condiciones de orden y aseo.
     <select name="cbopreg3" id="preg" required>
-      <option value="Cumple">Cumple</option>
-      <option value="No Cumple">No Cumple</option>
+      <option value="SI">Cumple</option>
+      <option value="NO">No Cumple</option>
     </select>
     <br><br>
 
     ✻ Se cuenta con el procedimiento para el almacenamiento, tratamiento y disposicion de residuos.
     <select name="cbopreg4" id="preg" required>
-      <option value="Cumple">Cumple</option>
-      <option value="No Cumple">No Cumple</option>
+      <option value="SI">Cumple</option>
+      <option value="NO">No Cumple</option>
     </select>
     <br><br>
 
     ✻ Los materiales e insumos son los requeridos para desarrollar la acftividad de aprendizaje (cantidad y calidad).
     <select name="cbopreg5" id="preg" required>
-      <option value="Cumple">Cumple</option>
-      <option value="No Cumple">No Cumple</option>
+      <option value="SI">Cumple</option>
+      <option value="NO">No Cumple</option>
     </select>
     <br><br><br>
 
     ✻ El inventario existente en el ambiente esta completo y en buenas condiciones.
     <select name="cbopreg6" id="preg" required>
-      <option value="Cumple">Cumple</option>
-      <option value="No Cumple">No Cumple</option>
+      <option value="SI">Cumple</option>
+      <option value="NO">No Cumple</option>
     </select>
     <br><br>
 
-    ✻ Se cuenta con la bibliografia basica (fisica  y/o digital), según lo establecido en el diseño del programa de formacion <select name="cbopreg7" id="preg" required>
-      <option value="Cumple">Cumple</option>
-      <option value="No Cumple">No Cumple</option>
-    </select> y las guias de aprendizaje.<br><br>
+    ✻ Se cuenta con la bibliografia basica (fisica  y/o digital), según lo establecido en el diseño del programa de formacion  y las guias de aprendizaje.
+
+    </select><br><br>
   </div>
-
-
+  
+  
   <input type="submit" name="btnGuardar" value="Guardar" id="boton">
-  <?php
-  mysql_connect('localhost','root','');
-  mysql_select_db('dbtest') or die(mysql_error());
-  if (@$_POST['btnGuardar'])
-  {
-   mysql_query("INSERT INTO formularioinstructor (nombres, apellidos, cedula, cargo, correo, pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, pregunta6, pregunta7, departamento, ciudades, centros, sede, ambientes, ficha, jornada) VALUES('$_POST[txtNombres]','$_POST[txtApellidos]','$_POST[txtCedula]','$_POST[txtCargo]','$_POST[txtCorreo]','$_POST[cbopreg1]','$_POST[cbopreg2]','$_POST[cbopreg3]','$_POST[cbopreg4]','$_POST[cbopreg5]','$_POST[cbopreg6]','$_POST[cbopreg7]','$_POST[txtDepartamento]','$_POST[txtCiudades]','$_POST[txtCentros]','$_POST[txtSede]','$_POST[txtAmbiente]','$_POST[txtFicha]','$_POST[txtJornada]')");
- }
- ?>
+  
+
+
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container-fluid">
@@ -108,7 +101,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
                 <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="icon-user"></i>
                   <?php
-                  echo $row['userEmail'];
+                  echo $row['userName'];
                   ?>
                   <i class="caret"></i>
                 </a>
@@ -141,7 +134,7 @@ $query = "SELECT departamentos FROM departamentos ORDER BY departamentos ASC";
 $resultado = $mysqli->query($query);
 ?>
 
-<form id="combo" name="combo" action="Guardar" method="POST">
+
       <div class="margin2" id="margin2">
     <div>Selecciona Departamento:<br> <select id="txtDepartamento" name="txtDepartamento">
       <option value="0">&#128272;Seleccionar Departamento</option>
@@ -204,14 +197,14 @@ $resultado = $mysqli->query($query);
 
     <?php
 require('conexion.php');
-$query = "SELECT fichasNom FROM fichas ORDER BY fichasNom ASC";
+$query = "SELECT idfichas FROM fichas ORDER BY idfichas ASC";
 $resultado = $mysqli->query($query);
 ?>
 
     <div>Selecciona Fichas:<br> <select id="txtFicha" name="txtFicha" required="">
       <option value="0">&#128272;Seleccionar Ficha</option>
       <?php while($row = $resultado->fetch_assoc()){?>
-      <option value="<?php echo $row['fichasNom'];?>"><?php echo $row['fichasNom'];?></option>
+      <option value="<?php echo $row['idfichas'];?>"><?php echo $row['idfichas'];?></option>
       <?php } ?>
     </select></div>
 

@@ -102,13 +102,13 @@ class USER
             $mail->Port = "2525";
             $mail->SMTPAuth = true;
             $mail->SMTPSecure = 'SSL';
-            $mail->Username = "orlando.e.v.26@gmail.com";
-            $mail->Password = "oORvy1x1jGvj";
+            $mail->Username = "orlando.e.v.26@outlook.com";
+            $mail->Password = "z8dgDFROiT31";
             $mail->MsgHTML($message);
-            $mail->From = "orlando.e.v.26@gmail.com";
+            $mail->From = "orlando.e.v.26@outlook.com";
             $mail->FromName = "Activacion";
             $mail->AddAddress($email); 
-            $mail->AddReplyTo("orlando.e.v.25@outlook.com", "gracias");
+            $mail->AddReplyTo("orlando.e.v.27@outlook.com", "gracias");
             $mail->Subject = $subject;
             $mail->Body = ($message);
             $mail->WordWrap = 50;

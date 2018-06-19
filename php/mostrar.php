@@ -13,7 +13,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-  <title><?php echo $row['userEmail']; ?></title>
+  <title>Sistema de Verificacion de Ambientes</title>
   <link rel="stylesheet" type="text/css" href="../css/home.css">
   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
@@ -38,7 +38,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
                 <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="icon-user"></i>
                   <?php
-                  echo $row['userEmail'];
+                  echo $row['userName'];
                   ?>
                   <i class="caret"></i>
                 </a>
@@ -78,7 +78,7 @@ $query=$conexion->query($sql);
           echo "<center><table border='1px'>
              <header>
                 <tr>
-                  <th>ID</th>
+                  
                   <th>Nombres</th>
                   <th>Apellidos</th>
                   <th>Cedula</th>
@@ -90,21 +90,21 @@ $query=$conexion->query($sql);
                   <th>Pregunta 4</th>
                   <th>Pregunta 5</th>
                   <th>Pregunta 6</th>
-                  <th>Pregunta 7</th>
+                  
+                  <th>Departamentos</th>
+                  <th>Ciudades</th>
+                  <th>Centros</th>
                   <th>Sede</th>
                   <th>Ambientes</th>
                   <th>Fichas</th>
                   <th>Jornadas</th>
-                  <th>Departamentos</th>
-                  <th>Ciudades</th>
-                  <th>Centros</th>
                   </tr>
             </header>";
     
     while($res=$query->fetch_array())
     {
          echo '<tr>
-        <td><center>'.$res['id'].'</td>
+        
         <td><center>'.$res['nombres'].'</td>
         <td><center>'.$res['apellidos'].'</td>
         <td><center>'.$res['cedula'].'</td>
@@ -116,14 +116,17 @@ $query=$conexion->query($sql);
         <td><center>'.$res['pregunta4'].'</td>
         <td><center>'.$res['pregunta5'].'</td>
         <td><center>'.$res['pregunta6'].'</td>
-        <td><center>'.$res['pregunta7'].'</td>
+        
+        <td><center>'.$res['departamento'].'</td>
+        <td><center>'.$res['ciudades'].'</td>
+        <td><center>'.$res['centros'].'</td>
         <td><center>'.$res['sede'].'</td>
         <td><center>'.$res['ambientes'].'</td>
         <td><center>'.$res['ficha'].'</td>
         <td><center>'.$res['jornada'].'</td>
-        <td><center>'.$res['departamento'].'</td>
-        <td><center>'.$res['ciudades'].'</td>
-        <td><center>'.$res['centros'].'</td>
+        
+        
+        
   </tr>
   ';
     }
@@ -135,7 +138,7 @@ $query=$conexion->query($sql);
   }
 
 ?>
-<p><a href="http://localhost:8080/ProyectoADSI/php/opcioninstru.php" id="volver"><br>Atras</p>
+<p>Listade Chequeo</p>
   </div>
     <script src="../bootstrap/js/jquery-1.9.1.min.js"></script> 
     <script src="../bootstrap/js/bootstrap.min.js"></script> 

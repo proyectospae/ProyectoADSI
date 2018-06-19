@@ -39,7 +39,7 @@ $z->query($query);
 echo "Registro borrado";
 
 ?>
-<p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Centros/centro.php" id="volver">Volver menu principal</a></p>
+<p><a href="/ProyectoADSI/GestionAmbientes2/Centros/centro.php" id="volver">Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

@@ -13,7 +13,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-  <title><?php echo $row['userEmail']; ?></title>
+  <title>Sistemas de Verificacion de Ambientes</title>
   <link rel="stylesheet" type="text/css" href="../css/home.css">
   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
@@ -22,10 +22,10 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <P>Sistema de Verificacion de Ambientes</P>
   </div>
   <div class="margin11" id="margin11">
-    <p><a href="http://localhost:8080/ProyectoADSI/php/home.php" id="link2">Realizar Formulario de Verificacion de Ambientes</a></p>
-    <p><a href="http://localhost:8080/ProyectoADSI/php/mostrar.php" id="link2">Consultar los Formularios de Sistema de Verificacion de Ambientes</a></p>
+    <p><a href="/ProyectoADSI/php/home.php" id="link2">Realizar Formulario de Verificacion de Ambientes</a></p>
+    <p><a href="/ProyectoADSI/php/mostrar.php" id="link2">Consultar los Formularios de Sistema de Verificacion de Ambientes</a></p>
   </div>
-  <input type="submit" name="btnGuardar" value="Guardar" id="boton">
+  
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container-fluid">
@@ -41,7 +41,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
                 <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="icon-user"></i>
                   <?php
-                  echo $row['userEmail'];
+                  echo $row['userName'];
                   ?>
                   <i class="caret"></i>
                 </a>

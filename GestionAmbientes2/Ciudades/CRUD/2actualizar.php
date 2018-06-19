@@ -42,7 +42,7 @@ $query =  "UPDATE `ciudades` set `ciudades`='$a' where idciudades='$b'";
 $z->query($query);
 //echo $z;
 ?>
-<p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Ciudades/ciudades.php" id="volver"><br>Volver menu principal</a></p>
+<p><a href="/ProyectoADSI/GestionAmbientes2/Ciudades/ciudades.php" id="volver"><br>Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

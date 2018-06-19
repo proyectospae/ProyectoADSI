@@ -11,8 +11,8 @@
   </div>
    <div class="margin9" id="margin9">
 <?php
-//CONEXIÓN A LA BASE DE DATOS
-//Datos de conexión
+//CONEXIï¿½N A LA BASE DE DATOS
+//Datos de conexiï¿½n
 $zz= $_POST ['idsede'];
 
 $hostname_db = "localhost";
@@ -20,7 +20,7 @@ $database_db = "modelo";
 $username_db = "root";
 $password_db = "";
 
-// Creación del Objeto y entregando los datos a los atributos
+// Creaciï¿½n del Objeto y entregando los datos a los atributos
 $z = new mysqli($hostname_db, $username_db, $password_db,$database_db);
 $sql = "select * from sedes where idSedes='$zz'";
 $query=$z->query($sql);
@@ -57,7 +57,7 @@ if ($z->connect_errno) {
     <label for=""></label>
   </p>
 </form>
-<p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Sedes/sedes.php" id="volver">Volver menu principal</a></p>
+<p><a href="/ProyectoADSI/GestionAmbientes2/Sedes/sedes.php" id="volver">Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

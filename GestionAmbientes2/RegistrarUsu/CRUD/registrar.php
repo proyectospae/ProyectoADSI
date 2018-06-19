@@ -19,16 +19,16 @@ $a=$_POST["sedenom"];
 echo $a."<br>";
 
 
-//CONEXIÓN A LA BASE DE DATOS
-//Datos de conexión
+//CONEXIï¿½N A LA BASE DE DATOS
+//Datos de conexiï¿½n
 $hostname_db = "localhost";
 $database_db = "modelo";
 $username_db = "root";
 $password_db = "";
-// Creación del Objeto y entregando los datos a los atributos
+// Creaciï¿½n del Objeto y entregando los datos a los atributos
 // Se crea el objeto a de la clase mysql
 $z = new mysqli($hostname_db, $username_db, $password_db,$database_db);
-// Se verifica si hay algún erro en la conexion
+// Se verifica si hay algï¿½n erro en la conexion
 
 if ($z->connect_errno) {
     printf("Fallo en la conexion a la base de datos: %s\n", $a->connect_error);
@@ -39,7 +39,7 @@ $query = "INSERT INTO `sedes` (`SedesNom`) VALUES ('$a')";
 $z->query($query);
 //echo $z;
 ?>
-<p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Sedes/sedes.php" id="volver"><br>Volver menu principal</a></p>
+<p><a href="/ProyectoADSI/GestionAmbientes2/Sedes/sedes.php" id="volver"><br>Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

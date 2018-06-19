@@ -15,7 +15,9 @@
 // Recibe los datos enviados desde html
 echo "<center></center><br><center>";
 $a=$_POST["departamentos"];
+$b=$_POST["IDdepart"];
 echo $a."<br>";
+echo $b."<br>";
 
 
 //CONEXI�N A LA BASE DE DATOS
@@ -34,12 +36,12 @@ if ($z->connect_errno) {
     exit();
 }
 // Consulta en SQL
-$query = "INSERT INTO `departamentos` (`Departamentos`) VALUES ('$a')";
+$query = "INSERT INTO `departamentos` (`iddepartamentos`, `departamentos`) VALUES ('$b','$a')";
 $z->query($query);
 //echo $z;
 ?>
 
-<p><a href=http://localhost:8080/ProyectoADSI/GestionAmbientes2/Departamentos/departamentos.php id="volver"><br>Volver menu principal</a></p>
+<p><a href=/ProyectoADSI/GestionAmbientes2/Departamentos/departamentos.php id="volver"><br>Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

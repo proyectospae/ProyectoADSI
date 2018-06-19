@@ -70,7 +70,7 @@ $query=$conexion->query($sql);
 	}
 	//cambiar los datos por productos
 ?>
-<p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Sedes/sedes.php" id="volver"><br>Volver menu principal</a></p>
+<p><a href="/ProyectoADSI/GestionAmbientes2/Sedes/sedes.php" id="volver"><br>Volver menu principal</a></p>
   </div>
     <script src="../bootstrap/js/jquery-1.9.1.min.js"></script> 
     <script src="../bootstrap/js/bootstrap.min.js"></script> 

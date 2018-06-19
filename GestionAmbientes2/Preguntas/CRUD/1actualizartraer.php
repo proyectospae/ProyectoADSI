@@ -16,7 +16,7 @@
 $zz= $_POST ['idpregunta'];
 
 $hostname_db = "localhost";
-$database_db = "modelo";
+$database_db = "dbtest";
 $username_db = "root";
 $password_db = "";
 
@@ -35,7 +35,7 @@ if ($z->connect_errno) {
 
  }
  else{
-   echo"<script> alert('No se encontraron registros'); window.location='http://localhost:8080/ProyectoADSI/GestionAmbientes2/Preguntas/actualizar.php';</script>";
+   echo"<script> alert('No se encontraron registros'); window.location='/ProyectoADSI/GestionAmbientes2/Preguntas/actualizar.php';</script>";
  }
 // Consulta en SQL
   //if($query->num_rows>0)
@@ -65,7 +65,7 @@ if ($z->connect_errno) {
     <label for=""></label>
   </p>
 </form>
-<p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Preguntas/preguntas.php" id="volver">Volver menu principal</a></p>
+<p><a href="/ProyectoADSI/GestionAmbientes2/Preguntas/preguntas.php" id="volver">Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

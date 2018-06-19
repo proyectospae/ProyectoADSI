@@ -28,7 +28,7 @@ if(isset($_POST['btn-signup']))
       $key = base64_encode($id); 
       $id = $key;
       $message = "Hola $uname,<br/><br/>Bienvenido <br/>Para completar su registro, haga clic en el enlace siguiente<br/>
-      <br/><br/><a href='http://localhost:8080/ProyectoADSI/php/verify.php?id=$id&code=$code'>Haga clic AQUÍ para activar.
+      <br/><br/><a href='/ProyectoADSI/php/verify.php?id=$id&code=$code'>Haga clic AQUÍ para activar.
       </a><br/><br/>Gracias,";
       $subject = "Confirm Registration";
       $reg_user->send_mail($email,$message,$subject);

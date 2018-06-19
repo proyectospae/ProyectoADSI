@@ -14,9 +14,13 @@
    	<?php
 // Recibe los datos enviados desde html
    	echo "<center></center><br><center>";
-$a=$_POST["ambientenombre"];
+$a=$_POST["ID"];
+$b=$_POST["ambientenombre"];
+$c=$_POST["IDsede"];
 
 echo $a."<br>";
+echo $b."<br>";
+echo $c."<br>";
 
 
 //CONEXI�N A LA BASE DE DATOS
@@ -36,11 +40,11 @@ if ($z->connect_errno) {
 }
 // Consulta en SQL
 
-$query = "INSERT INTO `ambientes` (`AmbientesNom`) VALUES ('$a')";
+$query = "INSERT INTO `ambientes` (`idAmbientes`, `AmbientesNom`, `sedes_idSedes`) VALUES ('$a', '$b', '$c')";
 $z->query($query);
 //echo $z;
 ?>
-<p><a href=http://localhost:8080/ProyectoADSI/GestionAmbientes2/Ambientes/ambientes.php id="volver"><br>Volver menu principal</a></p>
+<p><a href=/ProyectoADSI/GestionAmbientes2/Ambientes/ambientes.php id="volver"><br>Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

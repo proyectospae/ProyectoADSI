@@ -13,7 +13,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-  <title><?php echo $row['userEmail']; ?></title>
+  <title><?php echo $row['userName']; ?></title>
   <link rel="stylesheet" type="text/css" href="../css/home.css">
   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
@@ -22,9 +22,9 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <P>Sistema de Verificacion de Ambientes</P>
   </div>
   <div class="margin11" id="margin11">
-    <p><a href="http://localhost:8080/ProyectoADSI/login/home2.php" id="link2">Datos Verificacion</a></p>
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Preguntas/preguntas.php" id="link2">Modificar Preguntas de Lista de Chequeo</a></p>
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/RegistrarUsu/registrarusu.php" id="link2">Registrar Nuevo Usuario</a></p>
+    <p><a href="/ProyectoADSI/login/home2.php" id="link2">Datos Verificacion</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/Preguntas/preguntas.php" id="link2">Modificar Preguntas de Lista de Chequeo</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/RegistrarUsu/registrarusu.php" id="link2">Registrar Nuevo Usuario</a></p>
   </div>
   <input type="submit" name="btnGuardar" value="Guardar" id="boton">
  <div class="navbar navbar-fixed-top">
@@ -42,7 +42,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
                 <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="icon-user"></i>
                   <?php
-                  echo $row['userEmail'];
+                  echo $row['userName'];
                   ?>
                   <i class="caret"></i>
                 </a>

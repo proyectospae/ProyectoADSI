@@ -14,9 +14,13 @@
 <?php
 // Recibe los datos enviados desde html
 echo "<center></center><br><center>";
-$a=$_POST["ciudades"];
+$a=$_POST["ID"];
+$b=$_POST["ciudades"];
+$c=$_POST["IDdempat"];
 
 echo $a."<br>";
+echo $b."<br>";
+echo $c."<br>";
 
 
 //CONEXI�N A LA BASE DE DATOS
@@ -35,11 +39,11 @@ if ($z->connect_errno) {
     exit();
 }
 // Consulta en SQL
-$query = "INSERT INTO `ciudades` (`ciudades`) VALUES ('$a')";
+$query = "INSERT INTO `ciudades` (`idciudades`, `ciudades`, `departamentos_iddepartamentos`) VALUES ('$a', '$b', '$c')";
 $z->query($query);
 //echo $z;
 ?>
-<p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Ciudades/ciudades.php" id="volver"><br>Volver menu principal</a></p>
+<p><a href="/ProyectoADSI/GestionAmbientes2/Ciudades/ciudades.php" id="volver"><br>Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

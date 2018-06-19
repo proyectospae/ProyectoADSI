@@ -13,12 +13,17 @@
     <form name="form1" method="post" action="CRUD/registrar.php"><br><br>
       <p2 id="p2"><center>Formulario de Registro</center></p2>
       <table width="200" border="1"><br><br>
+        ID Centro:
+        <input type="text" name="ID" id="ID" required="">
         Centro:
         <input type="text" name="centronombre" id="centronombre" required="">
+        ID de Ciudad:
+        <input type="text" name="IDciudad" id="IDciudad" required="">
+
         <input type="submit" name="Guardar" id="Guardar" value="Enviar">
       </table>
     </form>
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Centros/centro.php" id="volver">Volver menu principal</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/Centros/centro.php" id="volver">Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

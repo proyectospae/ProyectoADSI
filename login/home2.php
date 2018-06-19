@@ -13,7 +13,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-  <title><?php echo $row['userEmail']; ?></title>
+  <title><?php echo $row['userName']; ?></title>
   <link rel="stylesheet" type="text/css" href="../css/home.css">
   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
@@ -22,13 +22,13 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <P>Sistema de Verificacion de Ambientes</P>
   </div>
    <div class="margin10" id="margin10">
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Departamentos/departamentos.php" id="link2">Departamentos</a></p>
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Ciudades/ciudades.php" id="link2">Ciudades</a></p>
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Centros/centro.php" id="link2">Centros</a></p>
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Sedes/sedes.php" id="link2">Sedes</a></p>
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Ambientes/ambientes.php" id="link2">Ambientes</a></p>
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Fichas/fichas.php" id="link2">Fichas</a></p>
-    <p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/Jornada/jornadas.php" id="link2">Jornada</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/Departamentos/departamentos.php" id="link2">Departamentos</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/Ciudades/ciudades.php" id="link2">Ciudades</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/Centros/centro.php" id="link2">Centros</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/Sedes/sedes.php" id="link2">Sedes</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/Ambientes/ambientes.php" id="link2">Ambientes</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/Fichas/fichas.php" id="link2">Fichas</a></p>
+    <p><a href="/ProyectoADSI/GestionAmbientes2/Jornada/jornadas.php" id="link2">Jornada</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
@@ -45,7 +45,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
                 <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="icon-user"></i>
                   <?php
-                  echo $row['userEmail'];
+                  echo $row['userName'];
                   ?>
                   <i class="caret"></i>
                 </a>
@@ -64,7 +64,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
         <div class="pull-right hidden-xs">
             S.V.A&nbsp;&nbsp;SENA&nbsp;&nbsp;
         </div>
-        <strong>&nbsp;A.D.S.I &copy; 2016&nbsp;-&nbsp;2018&nbsp;-&nbsp;<a href="http://localhost:8080/ProyectoADSI/login/opcionadmin.php" id="link2">Atras</a>.</strong>
+        <strong>&nbsp;A.D.S.I &copy; 2016&nbsp;-&nbsp;2018&nbsp;-&nbsp;<a href="ProyectoADSI/login/opcionadmin.php" id="link2">Atras</a>.</strong>
     </footer>
     <script src="../bootstrap/js/jquery-1.9.1.min.js"></script> 
     <script src="../bootstrap/js/bootstrap.min.js"></script> 

@@ -21,7 +21,7 @@ if(isset($_POST['btn-submit']))
     $message= "Hello , $email <br/><br/> We got requested to reset your password,
     if you do this then just click the following link to reset your password, if not just ignore this email,<br/><br/>
     Haga clic en siguiente vínculo para restablecer su contraseña<br/><br/>
-    <a href='http://localhost:8080/ProyectoADSI/login/resetpass2.php?id=$id&code=$code'>Haga clic aquí para restablecer la contraseña</a>
+    <a href='/ProyectoADSI/login/resetpass2.php?id=$id&code=$code'>Haga clic aquí para restablecer la contraseña</a>
     <br/><br/>Gracias";
     $subject = "Password Reset";
     $user->send_mail($email,$message,$subject);

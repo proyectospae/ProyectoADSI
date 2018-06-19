@@ -37,7 +37,7 @@
 $host="localhost";
 $usuario="root";
 $password="";
-$db="modelo";
+$db="dbtest";
 
 $conexion = new mysqli($host,$usuario,$password,$db);
 $sql = "select * from preguntas";
@@ -70,7 +70,7 @@ $query=$conexion->query($sql);
 	//cambiar los datos por productos
 
 ?>
-<p><a href="http://localhost:8080/ProyectoADSI/GestionAmbientes2/preguntas/preguntas.php" id="volver"><br>Volver menu principal</a></p>
+<p><a href="/ProyectoADSI/GestionAmbientes2/preguntas/preguntas.php" id="volver"><br>Volver menu principal</a></p>
   </div>
     <script src="../bootstrap/js/jquery-1.9.1.min.js"></script> 
     <script src="../bootstrap/js/bootstrap.min.js"></script> 
