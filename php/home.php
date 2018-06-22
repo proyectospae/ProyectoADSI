@@ -32,56 +32,46 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <label for="txtCorreo">Correo</label><input type="email" id="margin1" name="txtCorreo" placeholder="&#128272;Correo" required=""><br><br>
   </div>
   
-    
-  <div class="margin3" id="margin3"><br>
- 
+
+
+  <div class="margin3" id="margin3">
+    <?php 
+      require('mostrarpre.php');
+    ?>
+    <tb>
     <select name="cbopreg1" id="preg" required>
       <option value="SI">Cumple</option>
       <option value="NO">No Cumple</option>
     </select>
-    <br><br>
-
-    ✻ La maquinaria y equipos son suficientes y se encuentran en buen estado para desarrollar la actividad de aprendizaje.
+    
     <select name="cbopreg2" id="preg" required>
       <option value="SI">Cumple</option>
       <option value="NO">No Cumple</option>
     </select>
-    <br><br><br>
-
-    ✻ El ambiente se encuentra en buenas condiciones de orden y aseo.
+  
     <select name="cbopreg3" id="preg" required>
       <option value="SI">Cumple</option>
       <option value="NO">No Cumple</option>
     </select>
-    <br><br>
-
-    ✻ Se cuenta con el procedimiento para el almacenamiento, tratamiento y disposicion de residuos.
+    
     <select name="cbopreg4" id="preg" required>
       <option value="SI">Cumple</option>
       <option value="NO">No Cumple</option>
     </select>
-    <br><br>
-
-    ✻ Los materiales e insumos son los requeridos para desarrollar la acftividad de aprendizaje (cantidad y calidad).
+    
     <select name="cbopreg5" id="preg" required>
       <option value="SI">Cumple</option>
       <option value="NO">No Cumple</option>
     </select>
-    <br><br><br>
-
-    ✻ El inventario existente en el ambiente esta completo y en buenas condiciones.
+    
     <select name="cbopreg6" id="preg" required>
       <option value="SI">Cumple</option>
       <option value="NO">No Cumple</option>
     </select>
-    <br><br>
-
-    ✻ Se cuenta con la bibliografia basica (fisica  y/o digital), según lo establecido en el diseño del programa de formacion  y las guias de aprendizaje.
-
-    </select><br><br>
+    </tb>
+    
   </div>
-  
-  
+    
   <input type="submit" name="btnGuardar" value="Guardar" id="boton">
   
 

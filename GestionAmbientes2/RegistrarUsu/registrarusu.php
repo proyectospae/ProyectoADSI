@@ -10,11 +10,11 @@
     <P>Sistema de Verificacion de Ambientes</P>
   </div>
    <div class="margin4" id="margin4">
-   	<p><a href="insertar.php" id="link1">Registrar Nueva Sede</a></p>
-   	<p><a href="CRUD/mostrar.php" id="link1">Mostrar las Sede</a></p>
-   	<p><a href="actualizar.php" id="link1">Actualizar los datos de las Sedes</a></p>
-   	<p><a href="borrar.php" id="link1">Borrar la Sede de centro</a></p>
-    <p><a href="/ProyectoADSI/login/home2.php"><input type="submit" value="Regresar al Inicio" id="boton2"></a></p>
+   	<p><a href="insertar.php" id="link1">Registrar Nuevo Usuario</a></p>
+   	<p><a href="CRUD/mostrar.php" id="link1">Mostrar Usuario Registrados</a></p>
+   	<p><a href="actualizar.php" id="link1">Actualizar los datos de Usuario</a></p>
+   	<p><a href="borrar.php" id="link1">Borrar Usuario</a></p>
+    <p><a href="/ProyectoADSI/login/opcionadmin.php"><input type="submit" value="Regresar al Inicio" id="boton2"></a></p>
   </div>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">

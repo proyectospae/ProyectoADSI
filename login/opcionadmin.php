@@ -13,7 +13,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-  <title><?php echo $row['userName']; ?></title>
+  <title>Sistema de Verificacion de Ambientes</title>
   <link rel="stylesheet" type="text/css" href="../css/home.css">
   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
@@ -24,9 +24,10 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
   <div class="margin11" id="margin11">
     <p><a href="/ProyectoADSI/login/home2.php" id="link2">Datos Verificacion</a></p>
     <p><a href="/ProyectoADSI/GestionAmbientes2/Preguntas/preguntas.php" id="link2">Modificar Preguntas de Lista de Chequeo</a></p>
-    <p><a href="/ProyectoADSI/GestionAmbientes2/RegistrarUsu/registrarusu.php" id="link2">Registrar Nuevo Usuario</a></p>
+    <!-- <p><a href="/ProyectoADSI/GestionAmbientes2/RegistrarUsu/registrarusu.php" id="link2">Registrar Nuevo Usuario</a></p> -->
+    <p><a href="/ProyectoADSI/login/mostrar.php" id="link2">Listas de Chequeo</a></p>
   </div>
-  <input type="submit" name="btnGuardar" value="Guardar" id="boton">
+ 
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container-fluid">
