@@ -12,7 +12,7 @@ if($resultado){
             
          </script>";
 }else{
-    echo "no se inserto ni mierda";   
+      
 }
 }else{
     echo "error";
