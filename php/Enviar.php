@@ -6,16 +6,17 @@ $sql="INSERT INTO formularioinstructor (nombres, apellidos, cedula, cargo, corre
 $resultado = $mysqli->query($sql);
 if($resultado){
     echo "<script>
-            var mgs = 'Registro Realizado';
-            windows.location('/ProyectoADSI/php/home.php');
-            alert(mgs);
-            
-         </script>";
+          alert('Registro Realizado');
+          window.location.href = '/ProyectoADSI/php/home.php'; 
+          </script>";
 }else{
       
 }
 }else{
-    echo "error";
+    echo "<script>
+            alert('No Se Logro Realizar el Registro');
+            window.location.href = '/ProyectoADSI/php/home.php'; 
+         </script>";;
 }
 
 ?>
