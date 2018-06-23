@@ -58,6 +58,7 @@ if(isset($_POST['btn-login']))
       <button class="btn btn-large btn-primary" type="submit" name="btn-login">Iniciar Sesion</button>
       <a href="signup.php" class="btn-large"><p>Registrate</p></a>
       <a href="fpass.php" class="olvidastes"><p>¿Olvidaste la Contraseña?</p></a>
+      <a href="/ProyectoADSI/php/menuadmin.php" class="btn-btn-large" id="atras">Atras</a>
     </form>
   </div>
   <script src="../bootstrap/js/jquery-1.9.1.min.js"></script> 
