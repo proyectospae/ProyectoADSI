@@ -15,7 +15,10 @@
       <table width="200" border="1"><br><br>
     <tr>
       Preguntas:
-      <input type="text" name="preguntas" id="preguntas" required=""> 
+      <input type="text" name="preguntas" id="preguntas" required="">
+      Id de Instructor:
+      <input type="text" name="ID" id="ID" required=""> 
+
       <input type="submit" name="Guardar" id="Guardar" value="Enviar">
   </table>
     </form>
