@@ -10,11 +10,12 @@
     <P>Sistema de Verificacion de Ambientes</P>
   </div>
    <div class="margin6" id="margin6">
-   	<p2 id="p2"><center><br>Ciudad Registrada</center></p2><br><br>
-<?php
+   	<p2 id="p2"><center><br>Preguntas Registrada</center></p2><br><br>
+     <?php
 // Recibe los datos enviados desde html
 echo "<center></center><br><center>";
 $a=$_POST["preguntas"];
+$b=$_POST["ID"];
 
 echo $a."<br>";
 
@@ -35,10 +36,13 @@ if ($z->connect_errno) {
     exit();
 }
 // Consulta en SQL
-$query = "INSERT INTO `preguntas` (`Nom_Pregunta`) VALUES ('$a')";
+$query = "INSERT INTO `preguntas` (`Nom_Pregunta`, `registrarusu_id`) VALUES ('$a', '$b')";
 $z->query($query);
 //echo $z;
 ?>
+
+
+
 <p><a href="/ProyectoADSI/GestionAmbientes2/Preguntas/preguntas.php" id="volver"><br>Volver menu principal</a></p>
   </div>
  <div class="navbar navbar-fixed-top">
