@@ -9,7 +9,6 @@ if($resultado){
             var mgs = 'Registro Realizado';
             windows.location('/ProyectoADSI/php/home.php');
             alert(mgs);
-            
          </script>";
 }else{
     echo "no se inserto ni mierda";   

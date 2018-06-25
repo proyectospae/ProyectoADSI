@@ -16,7 +16,6 @@
           echo '<tr>
           <td>'.$res['Nom_Pregunta'].'</td>
           <br><br>
-          
           <td></td>
           </tr>
           ';

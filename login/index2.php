@@ -20,7 +20,8 @@ if(isset($_POST['btn-login']))
 <html>
 <head>
   <title>Inicio de Sesion</title>
-  <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/index2.css">
   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">  
 </head>
 <body id="login">
@@ -49,7 +50,7 @@ if(isset($_POST['btn-login']))
         <?php
       }
       ?>
-      <a href="/ProyectoADSI/login/opcionadmin.php" class="btn-btn-large" id="atras"><center>Atras</center></a><br>
+      <br>
       <h2 class="form-signin-heading">Iniciar Sesion</h2><hr/>
       <p>Ingresa Email</p>
       <input type="email" class="input-block-level" id="email" placeholder="&#128272;Ingresa Email" name="txtemail" required/>
@@ -58,6 +59,7 @@ if(isset($_POST['btn-login']))
       <button class="btn btn-large btn-primary" type="submit" name="btn-login">Iniciar Sesion</button>
       <a href="signup2.php" class="btn-large"><p>Registrate</p></a>
       <a href="fpass2.php" class="olvidastes"><p>¿Olvidaste la Contraseña?</p></a>
+      <a href="/ProyectoADSI/php/menuadmin.php" class="btn-btn-large" id="atras"><center>Atras</center></a>
     </form>
   </div>
   <script src="../bootstrap/js/jquery-1.9.1.min.js"></script> 

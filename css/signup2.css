@@ -6,7 +6,7 @@
 }
 
 body{
-	background-image: url(../imagenes/azul.jpg);
+	background-image: url(../imagenes/Sena-LA-FM-Colprensa1.jpg);
 	background-repeat: no-repeat;
 	background-size: 2000px 1000px;
 	display: flex;
@@ -18,7 +18,7 @@ body{
     width: 30%;
     max-height: 700px;
     background: #F3F3F3;
-    padding: 30px;
+    padding: 20px;
     border: 1px solid rgba(0,0,0,0.2);
     background: #E2F1FE;
 	background-repeat: no-repeat;
@@ -26,14 +26,36 @@ body{
 }
 
 .form-signin-heading{
+	
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 20px;
+	padding: 0px;
+}
+
+input{
+	width: 100%;
+	padding: 10px;
+	display: block;
+	font-size: 20px;
+}
+
+.btn-primary{
+	opacity: 0.8;
+	cursor: pointer;
+	width: 100%;
+	padding: 10px;
+	display: block;
+	font-size: 20px;
+	font-family: Baskerville old face;
+}
+
+.btn-large{
 	text-align: center;
 }
 
-button{
-	width:100%;
-}
-
-.btn-btn-large{
+p{
+	text-align: center;
 	font-size: 18px;
 }
 
@@ -41,6 +63,6 @@ button{
 	width: 450px;
 }
 
-#contraseña{
+#padding{
 	padding: 20px;
 }

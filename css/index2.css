@@ -6,9 +6,9 @@
 }
 
 body{
-	background-image: url(../imagenes/azul.jpg);
+	background-image: url(../imagenes/Sena-LA-FM-Colprensa1.jpg);
 	background-repeat: no-repeat;
-	background-size: 2000px 1000px;
+	background-size: 1500px 900px;
 	display: flex;
 	min-height: 100vh;
 }
@@ -34,7 +34,7 @@ p{
 }
 
 .form-signin-heading{
-	color: #84CBFF;
+	
 	text-align: center;
 	font-size: 50px;
 	margin-bottom: 20px;

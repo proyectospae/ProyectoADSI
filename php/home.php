@@ -14,9 +14,11 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 <html class="no-js">
 <head>
   <title>Sistema de Verificacion de Ambientes</title>
-  <link rel="stylesheet" type="text/css" href="../css/home.css">
   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
   <script language="javascript" src="js/jquery-3.3.1.min.js"></script>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/home2.css">
+
 </head>
 <body>
 <form id="combo" name="combo" action="Enviar.php" method="POST">
@@ -38,39 +40,38 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <?php 
       require('mostrarpre.php');
     ?>
-    <tb>
-    <select name="cbopreg1" id="preg" required>
-      <option value="SI">Cumple</option>
-      <option value="NO">No Cumple</option>
-    </select>
-    
-    <select name="cbopreg2" id="preg" required>
-      <option value="SI">Cumple</option>
-      <option value="NO">No Cumple</option>
-    </select>
-  
-    <select name="cbopreg3" id="preg" required>
-      <option value="SI">Cumple</option>
-      <option value="NO">No Cumple</option>
-    </select>
-    
-    <select name="cbopreg4" id="preg" required>
-      <option value="SI">Cumple</option>
-      <option value="NO">No Cumple</option>
-    </select>
-    
-    <select name="cbopreg5" id="preg" required>
-      <option value="SI">Cumple</option>
-      <option value="NO">No Cumple</option>
-    </select>
-    
-    <select name="cbopreg6" id="preg" required>
-      <option value="SI">Cumple</option>
-      <option value="NO">No Cumple</option>
-    </select>
-    </tb>
-    
   </div>
+      <div class="marginselec" id="marginselec">
+        <select name="cbopreg1" id="preg" required>
+          <option value="SI">Cumple</option>
+          <option value="NO">No Cumple</option>
+        </select>
+        
+        <select name="cbopreg2" id="preg" required>
+          <option value="SI">Cumple</option>
+          <option value="NO">No Cumple</option>
+        </select>
+      
+        <select name="cbopreg3" id="preg" required>
+          <option value="SI">Cumple</option>
+          <option value="NO">No Cumple</option>
+        </select>
+        
+        <select name="cbopreg4" id="preg" required>
+          <option value="SI">Cumple</option>
+          <option value="NO">No Cumple</option>
+        </select>
+        
+        <select name="cbopreg5" id="preg" required>
+          <option value="SI">Cumple</option>
+          <option value="NO">No Cumple</option>
+        </select>
+        
+        <select name="cbopreg6" id="preg" required>
+          <option value="SI">Cumple</option>
+          <option value="NO">No Cumple</option>
+        </select>
+    </div>
     
   <input type="submit" name="btnGuardar" value="Guardar" id="boton">
   
