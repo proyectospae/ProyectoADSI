@@ -14,9 +14,8 @@
           while($res=$query->fetch_array())
           {
           echo '<tr>
-          <td>'.$res['Nom_Pregunta'].'</td>
+          <td>'.$res['id_Pregunta'].'. '.$res['Nom_Pregunta'].' </td>
           <br><br>
-          
           <td></td>
           </tr>
           ';

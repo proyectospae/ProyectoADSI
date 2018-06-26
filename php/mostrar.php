@@ -14,7 +14,8 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 <html class="no-js">
 <head>
   <title>Sistema de Verificacion de Ambientes</title>
-  <link rel="stylesheet" type="text/css" href="../css/home.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/home2.css">
   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
 <body>
@@ -90,6 +91,7 @@ $query=$conexion->query($sql);
                   <th>Pregunta 4</th>
                   <th>Pregunta 5</th>
                   <th>Pregunta 6</th>
+                  <th>Pregunta 7</th>
                   
                   <th>Departamentos</th>
                   <th>Ciudades</th>
@@ -116,6 +118,7 @@ $query=$conexion->query($sql);
         <td><center>'.$res['pregunta4'].'</td>
         <td><center>'.$res['pregunta5'].'</td>
         <td><center>'.$res['pregunta6'].'</td>
+        <td><center>'.$res['pregunta7'].'</td>
         
         <td><center>'.$res['departamento'].'</td>
         <td><center>'.$res['ciudades'].'</td>
